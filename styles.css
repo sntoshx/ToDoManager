@@ -1,0 +1,183 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.head-title {
+  top: 1.5vw;
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  font-family: arial;
+  font-weight: 700;
+  text-align: center;
+  width: 100vw;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgb(59, 59, 59);
+}
+
+@media (min-width: 1366px) {
+  body {
+    margin: auto auto;
+    background: rgb(24, 24, 24);
+    width: 1366px;
+  }
+  .container {
+    margin: auto auto;
+    background-color: rgb(59, 59, 59);
+  }
+  .head-title {
+    width: 1366px;
+  }
+}
+
+.logo img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 1360px) {
+  .logo {
+    position: absolute;
+    z-index: -1000;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.content {
+  background: rgb(225, 193, 255);
+  width: 780px;
+  height: 465px;
+  border: 8px double rgb(0, 0, 0);
+}
+
+.entry-content {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(172, 104, 218);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.job-entry {
+  border: black 4px solid;
+  width: 75%;
+  margin: 4px;
+  border-radius: 25px;
+  padding: 1px 7px;
+  color: rgb(210, 112, 255);
+  background: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  transition: 10ms linear;
+  font-weight: 700;
+}
+
+.job-entry:hover {
+  background: rgb(26, 26, 26);
+}
+.add-button,
+.clear-button {
+  margin: 2px;
+  background: rgb(0, 0, 0, 0.65);
+  font-size: 18px;
+  font-family: arial;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+  border: 3px rgb(0, 0, 0) solid;
+  color: white;
+  text-shadow: 0 0 3px black;
+  width: 64px;
+  transition: 0.1s linear;
+  border-radius: 15px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+}
+
+.add-button:hover,
+.clear-button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.task-list li {
+  margin: 1px auto;
+  font-size: 20px;
+  list-style-type: none;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.task-list {
+  display: flex;
+  align-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.task-list span {
+  margin-left: 10px;
+  width: 100%;
+  letter-spacing: 0.1px;
+  font-family: "Delius", arial;
+  font-weight: 700;
+}
+
+.task-list ul {
+  padding: 11px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#some {
+  display: flex;
+  align-content: center;
+}
+
+.message {
+  position: absolute;
+  opacity: 0;
+  margin: auto auto;
+}
+
+li img {
+  width: 22px;
+  height: 22px;
+  vertical-align: text-bottom;
+}
+
+li img:hover {
+  filter: hue-rotate(90deg);
+
+  cursor: pointer;
+}
+
+li img:active {
+  transform: translateY(2px);
+}

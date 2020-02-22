@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Manager</title>
+  </head>
+  <body>
+    <div class="head-title">
+      ToDo Manager
+    </div>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/todomanager-logo.png" />
+      </div>
+      <div class="content">
+        <div class="entry-content">
+          <input
+            class="job-entry"
+            type="text"
+            placeholder="Enter your todo"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Enter your todo'"
+          />
+          <button class="add-button" onclick="addTask()">Add</button>
+          <button class="clear-button" onclick="clearInput()">Clear</button>
+        </div>
+        <div class="task-list">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- linking the js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
